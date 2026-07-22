@@ -1,0 +1,651 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>From Dream to Cockpit — Sponsorship Dossier</title><style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+:root{--ink:#11243d;--muted:#556071;--gold:#b99352;--gold-deep:#9c7838;--paper:#fbfaf7;--soft:#f1eee8;--line:#ded8cc;--navy:#0d2238;--white:#fff}
+html,body{margin:0;padding:0}
+body{background:#e8e6e1;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+/* Exact A4 page. Fixed height (not min-height) so PDF pagination is deterministic. */
+.page{width:210mm;height:297mm;margin:14px auto;background:var(--paper);position:relative;overflow:hidden;padding:20mm 18mm 18mm;box-shadow:0 18px 50px rgba(0,0,0,.18);display:flex;flex-direction:column;break-inside:avoid;page-break-inside:avoid;page-break-after:always}
+.page:last-child{page-break-after:auto}
+.page:before{content:'';position:absolute;inset:9mm;border:1px solid rgba(185,147,82,.38);pointer-events:none}
+.cover:before,.closing:before{border-color:rgba(255,255,255,.30)}
+.page>main{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;min-height:0}
+.page.top>main{justify-content:flex-start}
+.topline{position:absolute;left:18mm;right:18mm;top:9.5mm;display:flex;justify-content:space-between;align-items:center;font-size:9.5px;letter-spacing:.22em;color:var(--gold);text-transform:uppercase;font-weight:600;z-index:3}
+footer{position:absolute;left:18mm;right:18mm;bottom:9.5mm;display:flex;justify-content:space-between;color:var(--gold);letter-spacing:.20em;font-size:9px;text-transform:uppercase;font-weight:600;z-index:3}
+h1{margin:0 0 7mm;font-size:37px;line-height:1.03;letter-spacing:-.04em;font-weight:780;color:var(--navy)}
+h2{margin:0 0 4mm;font-size:22px;letter-spacing:-.02em;color:var(--navy)}
+h3{margin:0 0 3.5mm;font-size:14.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--navy);font-weight:700}
+p{font-size:14px;line-height:1.62;margin:0 0 4mm;color:#233247;font-weight:430}
+.subtitle{color:var(--muted);font-size:17.5px;line-height:1.4;max-width:150mm;margin-bottom:7mm;font-weight:450}
+.label{color:var(--gold-deep);font-size:10.5px;letter-spacing:.20em;text-transform:uppercase;font-weight:800;margin-bottom:4mm}
+.act-eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.28em;text-transform:uppercase;font-weight:800;color:var(--gold-deep);margin-bottom:4.5mm;padding-bottom:2.5mm;border-bottom:2px solid rgba(185,147,82,.5)}
+.captain{font-weight:750;color:var(--gold-deep)}
+blockquote{margin:6mm 0;padding:5.5mm 7mm;border-left:4px solid var(--gold);background:rgba(185,147,82,.09);color:#152539;font-family:Georgia,serif;font-size:19.5px;line-height:1.4;font-style:italic;break-inside:avoid}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8mm;align-items:start}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm}
+.card,.stat,.mini,.evidence{background:white;border:1px solid rgba(17,36,61,.09);border-radius:16px;box-shadow:0 12px 30px rgba(17,36,61,.08);break-inside:avoid;page-break-inside:avoid}
+.card{padding:6.5mm}
+.card p{font-size:13.5px;line-height:1.55;margin-bottom:3mm}
+.card p:last-child{margin-bottom:0}
+.mini{padding:5mm;min-height:24mm}
+.mini span{display:block;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.15em;font-size:9px;font-weight:800;margin-bottom:2.5mm}
+.mini strong{display:block;font-size:17px;color:var(--navy);line-height:1.15}
+.mini em{display:block;color:var(--muted);font-size:11.5px;margin-top:2mm;font-style:normal}
+.stat{padding:5mm 3.5mm;text-align:center;min-height:33mm;display:flex;flex-direction:column;justify-content:center;overflow:visible}
+.stat strong{font-size:38px;line-height:1;color:var(--navy);letter-spacing:-.04em}
+.stat span{margin-top:2.5mm;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--gold-deep);font-weight:800;line-height:1.25;word-break:normal;overflow-wrap:break-word}
+.stat em{margin-top:1.6mm;font-style:normal;font-size:10.5px;color:var(--muted)}
+.evidence{margin:0;padding:3.5mm;overflow:hidden}
+.evidence img{width:100%;display:block;border-radius:12px;object-fit:cover;background:#f3f3f3}
+.evidence figcaption{margin-top:3mm;font-size:11px;color:var(--muted);line-height:1.4;text-align:center}
+.portrait img{height:112mm;object-fit:cover;object-position:center top}
+.wide img{height:62mm;object-fit:cover}
+.doc img{max-height:118mm;width:100%;object-fit:contain;background:white}
+.poster img{width:100%;height:132mm;object-fit:contain;background:#eef1f5;display:block}
+.email img{height:46mm;object-fit:contain;background:white}
+.examshot img{height:42mm;object-fit:contain;background:white}
+.newspaper img{height:100mm;object-fit:cover;object-position:top center}
+.cover{background:linear-gradient(135deg,rgba(13,34,56,.96),rgba(14,45,72,.88)),var(--navy);color:white;justify-content:center}
+.cover:before{inset:8mm}
+.cover .conf{color:var(--gold);letter-spacing:.34em;text-transform:uppercase;font-size:14px;font-weight:700;margin-bottom:5mm}
+.cover .dossier-label{color:#e7dfd0;letter-spacing:.28em;text-transform:uppercase;font-size:14.5px;font-weight:600;margin-top:12mm}
+.cover h1{color:white;font-size:56px;max-width:112mm;margin:6mm 0 8mm;line-height:1.0}
+.cover .subtitle{color:#dcd5c8;max-width:108mm;font-size:18px}
+.cover .hero{position:absolute;right:18mm;top:34mm;width:58mm}
+.cover .hero img{height:116mm;object-fit:cover;object-position:center top}
+.cover blockquote{position:absolute;left:18mm;bottom:32mm;width:130mm;background:rgba(255,255,255,.09);color:white;border-left-color:var(--gold);font-size:18px}
+.vtimeline{display:grid;grid-template-columns:1fr;gap:0;margin-top:3mm}
+.vtimeline .step{display:grid;grid-template-columns:30mm 1fr;gap:6mm;align-items:baseline;padding:4.2mm 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.vtimeline .step:last-child{border-bottom:none}
+.vtimeline strong{color:var(--gold-deep);font-size:16.5px;font-weight:800;letter-spacing:.01em}
+.vtimeline span{font-size:14px;color:#233247;line-height:1.45}
+.table{width:100%;border-collapse:collapse;background:white;border-radius:12px;overflow:hidden;box-shadow:0 10px 24px rgba(17,36,61,.07);margin-bottom:4mm;break-inside:avoid}
+.table th{background:var(--navy);color:white;font-size:10.5px;text-transform:uppercase;letter-spacing:.10em;text-align:left;padding:3.6mm 4mm;font-weight:700}
+.table td{font-size:13px;padding:3.6mm 4mm;border-bottom:1px solid #eee8dd;color:#233247}
+.table tr:last-child td{border-bottom:none}
+.table td:first-child{font-weight:640;color:var(--navy)}
+.total-line{background:rgba(185,147,82,.12);border:1px solid rgba(185,147,82,.4);border-radius:10px;padding:3.4mm 4.5mm;font-size:13px;color:var(--navy);font-weight:700;margin-bottom:4mm}
+.total-line span{color:var(--gold-deep)}
+.signature{font-family:Georgia,serif;font-size:30px;color:var(--navy);margin-top:8mm}
+.pathflow{display:flex;flex-direction:column;align-items:center;gap:0;margin:2mm 0}
+.pathflow .node{background:white;border:1px solid rgba(185,147,82,.4);border-radius:13px;box-shadow:0 8px 22px rgba(17,36,61,.08);padding:4.5mm 8mm;text-align:center;min-width:72mm;break-inside:avoid}
+.pathflow .node strong{display:block;font-size:16.5px;color:var(--navy);letter-spacing:.01em}
+.pathflow .node em{display:block;font-style:normal;font-size:11.5px;color:var(--gold-deep);text-transform:uppercase;letter-spacing:.12em;font-weight:700;margin-top:1.5mm}
+.pathflow .arrow{color:var(--gold);font-size:24px;line-height:1;margin:2.2mm 0}
+.checklist{list-style:none;padding:0;margin:4mm 0 0}
+.checklist li{position:relative;padding:4.2mm 5mm 4.2mm 16mm;background:white;border:1px solid rgba(17,36,61,.08);border-radius:12px;box-shadow:0 8px 20px rgba(17,36,61,.06);margin-bottom:3.6mm;font-size:14px;line-height:1.5;color:#233247;font-weight:490;break-inside:avoid}
+.checklist li:before{content:'';position:absolute;left:6mm;top:50%;transform:translateY(-50%);width:6.5mm;height:6.5mm;border-radius:50%;background:var(--navy);box-shadow:0 0 0 3px rgba(185,147,82,.28)}
+.checklist li:after{content:'';position:absolute;left:7.7mm;top:50%;transform:translate(-1px,-65%) rotate(45deg);width:1.6mm;height:3.2mm;border:solid var(--gold);border-width:0 1.6px 1.6px 0}
+.ev-appendix{display:grid;grid-template-columns:1fr 1fr;gap:6mm;margin-top:2mm}
+.ev-item{display:flex;gap:5mm;align-items:flex-start;background:white;border:1px solid rgba(17,36,61,.09);border-radius:14px;box-shadow:0 10px 26px rgba(17,36,61,.07);padding:5.5mm;break-inside:avoid}
+.ev-icon{flex:0 0 auto;width:12mm;height:12mm;border-radius:11px;background:linear-gradient(135deg,#132e4c,#1d426b);display:flex;align-items:center;justify-content:center;font-size:19px;color:var(--gold)}
+.ev-item h3{margin:0 0 2.5mm;font-size:12.5px}
+.ev-item p{font-size:12px;margin:0 0 1.5mm;line-height:1.4}
+.ev-item p:last-child{margin-bottom:0}
+.closing{background:linear-gradient(135deg,#0d2238,#173b5d);color:white}
+.closing>main{text-align:center;align-items:center}
+.closing .dream-title{font-size:33px;font-weight:780;letter-spacing:-.02em;color:white;margin-bottom:7mm}
+.closing .line{font-family:Georgia,serif;font-size:25px;line-height:1.45;margin:3mm auto;max-width:150mm;color:#eef2f6}
+.closing .final-quote{font-family:Georgia,serif;font-style:italic;font-size:23px;line-height:1.5;max-width:150mm;margin:11mm auto 0;color:white;padding:6.5mm 8mm;border-top:1px solid rgba(255,255,255,.25);border-bottom:1px solid rgba(255,255,255,.25)}
+.closing .sig-name{font-family:Georgia,serif;font-size:29px;color:white;margin-top:12mm}
+.closing .sig-role{color:var(--gold);letter-spacing:.16em;text-transform:uppercase;font-size:12.5px;font-weight:700;margin-top:2mm}
+/* PDF-first print rules — the on-screen page IS the printed page, 1:1 */
+@media print{
+  html,body{background:white;width:210mm;margin:0;padding:0}
+  /* Fixed A4 page, no auto page-break-after (the @page + fixed height drives pagination),
+     so no phantom blank pages are produced between sections. */
+  .page{margin:0 !important;box-shadow:none !important;width:210mm !important;height:297mm !important;overflow:hidden !important;break-inside:avoid !important;page-break-inside:avoid !important;break-after:page;page-break-after:always;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page:last-child{break-after:auto;page-break-after:auto}
+  /* Nothing inside a page may split across sheets */
+  .card,.stat,.mini,.evidence,.table,.ev-item,.checklist li,.pathflow .node,.pathflow,.vtimeline .step,.vtimeline,blockquote,figure,img,.grid2,.grid3,.total-line,.ptl,.ptl .node,.infobox,.commit-card{box-shadow:none !important;break-inside:avoid !important;page-break-inside:avoid !important}
+  tr,td,th{break-inside:avoid !important;page-break-inside:avoid !important}
+  img{max-width:100% !important}
+}
+
+/* --- Beyond Funding page (replaces Letter to Future Self) --- */
+.bf-sec-label{display:inline-block;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--gold-deep);margin:0 0 2mm;padding-bottom:1.2mm;border-bottom:2px solid rgba(185,147,82,.45)}
+.bf-h{font-size:13.5px;letter-spacing:-.01em;color:var(--navy);font-weight:750;margin:0 0 2.2mm}
+.ptl{display:flex;flex-direction:column;align-items:stretch;gap:0}
+.ptl .node{background:white;border:1px solid rgba(185,147,82,.38);border-radius:8px;box-shadow:0 4px 11px rgba(17,36,61,.06);padding:1.5mm 3mm;text-align:center;font-size:10.5px;font-weight:640;color:var(--navy);line-height:1.12;break-inside:avoid}
+.ptl .node.accent{background:rgba(185,147,82,.10);border-color:rgba(185,147,82,.55);color:var(--gold-deep);font-weight:800}
+.ptl .arrow{color:var(--gold);font-size:10px;line-height:1;text-align:center;margin:.5mm 0}
+.bf-caption{font-size:9.8px;line-height:1.38;color:#2b3a4d;margin:2.3mm 0 0}
+.bf-cols{display:grid;grid-template-columns:1fr 1fr;gap:7mm;align-items:start;margin-top:1mm}
+.infobox{margin-top:3.6mm;background:rgba(13,34,56,.045);border:1px solid rgba(185,147,82,.4);border-left:4px solid var(--gold);border-radius:11px;padding:3.2mm 4.5mm;break-inside:avoid}
+.infobox h3{font-size:12px;letter-spacing:.03em;text-transform:none;color:var(--navy);margin:0 0 2mm}
+.infobox p{font-size:10px;line-height:1.46;margin:0;color:#233247}
+.bf-body{font-size:10.5px;line-height:1.46;margin:0 0 2mm;color:#233247}
+.bf-body:last-child{margin-bottom:0}
+.commit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-top:2mm}
+.commit-card{background:white;border:1px solid rgba(17,36,61,.09);border-radius:13px;box-shadow:0 8px 20px rgba(17,36,61,.07);padding:3.6mm;break-inside:avoid}
+.commit-card .ci{width:8mm;height:8mm;border-radius:8px;background:linear-gradient(135deg,#132e4c,#1d426b);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--gold);margin-bottom:2.2mm}
+.commit-card h3{font-size:11px;letter-spacing:.02em;text-transform:none;color:var(--navy);margin:0 0 2mm;line-height:1.2}
+.commit-card p{font-size:10px;line-height:1.42;margin:0;color:#233247}
+.bf-block{margin-top:3.4mm}
+
+/* ---- Deterministic fit for the two dense pages (print-safe, no JS) ---- */
+.page.p14 .subtitle{font-size:14.5px;margin-bottom:4mm}
+.page.p14 > main > p{font-size:13px;line-height:1.5;margin-bottom:3mm}
+.page.p14 .card{padding:5mm}
+.page.p14 .card h3{margin-bottom:2.5mm;font-size:13.5px}
+.page.p14 .card p{font-size:12px;line-height:1.42;margin-bottom:2.5mm}
+.page.p14 .table th{padding:2.6mm 4mm;font-size:9.5px}
+.page.p14 .table td{padding:2.6mm 4mm;font-size:11.5px}
+.page.p14 .total-line{padding:2.6mm 4.5mm;margin-bottom:3mm;font-size:11.5px}
+.page.p14 .grid2{gap:6mm}
+.page.p14 > main > .card{margin-top:3mm}
+
+.page.p20 h1{margin-bottom:4mm}
+.page.p20 .subtitle{font-size:14px;margin-bottom:3.5mm}
+.page.p20 .bf-block{margin-top:2.4mm}
+.page.p20 .bf-sec-label{margin-bottom:1.6mm}
+.page.p20 .bf-cols{gap:6mm;margin-top:.5mm}
+.page.p20 .bf-h{margin-bottom:1.8mm}
+.page.p20 .ptl .node{padding:1.3mm 3mm;font-size:10px}
+.page.p20 .ptl .arrow{font-size:9px;margin:.3mm 0}
+.page.p20 .bf-caption{font-size:9.4px;line-height:1.34;margin-top:1.8mm}
+.page.p20 .infobox{margin-top:2mm;padding:2.6mm 4mm}
+.page.p20 .infobox h3{margin-bottom:1.4mm}
+.page.p20 .infobox p{font-size:9.6px;line-height:1.4}
+.page.p20 .bf-body{font-size:9.9px;line-height:1.38;margin-bottom:1.4mm}
+.page.p20 .commit-grid{gap:3.5mm;margin-top:1.5mm}
+.page.p20 .commit-card{padding:3.2mm}
+.page.p20 .commit-card h3{font-size:10.5px;margin-bottom:1.6mm}
+.page.p20 .commit-card p{font-size:9.6px;line-height:1.36}
+</style></head><body>
+
+<!-- 01 COVER -->
+<section class="page cover"><div class="topline"><span>A Sponsorship Dossier</span><span>Confidential · Personal</span></div>
+<main>
+<div class="conf">Prepared by Shubham Kumar</div>
+<div class="dossier-label">A Sponsorship Dossier · Confidential · Personal</div>
+<h1>FROM DREAM TO COCKPIT</h1>
+<p class="subtitle">An Investment Already Years in the Making</p>
+<p class="subtitle">Prepared in support of a sponsorship request for Commercial Pilot Training.</p>
+<figure class="evidence hero portrait"><img src="images/portrait.png" alt="Shubham Kumar"><figcaption>Shubham Kumar · Commercial Pilot Aspirant</figcaption></figure>
+<blockquote>My family gave me an education. I spent years turning it into an opportunity. Today, I ask only for the chance to complete the journey they began.</blockquote>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>01</span></footer></section>
+
+<!-- 02 BEFORE YOU READ -->
+<section class="page"><div class="topline"><span>Before You Read</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<h1>Before You Read</h1>
+<p class="subtitle">A personal opening note</p>
+<p>Dear Sir/Madam,</p>
+<p>Thank you for taking the time to read this document. Before you begin, I would like to make one thing clear.</p>
+<p>This is not a proposal built around financial hardship. Nor is it an attempt to convince you that my journey has been more difficult than anyone else's. Across our country, there are thousands of talented young people working tirelessly towards their dreams, and I have great respect for every one of them.</p>
+<p>This document has a much simpler purpose. It records the decisions I have made over the last several years. Whenever I encountered an obstacle, I tried to overcome it rather than accept it. When I discovered that Mathematics was mandatory for Commercial Pilot training, I returned to study it after nearly six years. When relocating for coaching became financially difficult, I chose online training to reduce the burden on my family. When I realised that aviation — not medicine — was the profession in which I genuinely wanted to build my future, I made the difficult decision to change careers.</p>
+<blockquote>This proposal is not asking anyone to believe only in my potential. It is asking you to consider the work that has already been done.</blockquote>
+<p>The pages that follow contain my journey, my achievements, my family's sacrifices and the roadmap I have built for the future. If, after reading them, you believe I am worthy of your trust, I would be deeply honoured.</p>
+<p>With sincere gratitude,</p>
+<div class="signature">Shubham Kumar</div>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>02</span></footer></section>
+
+<!-- 03 EXECUTIVE SNAPSHOT / PROFILE -->
+<section class="page top"><div class="topline"><span>Executive Snapshot</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<h1>Executive Snapshot</h1>
+<p class="subtitle">The candidate in one page</p>
+<div class="grid2">
+<div>
+<div class="label">Personal Information</div>
+<table class="table">
+<tr><th>Particular</th><th>Details</th></tr>
+<tr><td>Name</td><td>Shubham Kumar</td></tr>
+<tr><td>Date of Birth</td><td>28 July 2001</td></tr>
+<tr><td>Hometown</td><td>Bokaro Steel City, Jharkhand</td></tr>
+<tr><td>Qualification</td><td>B.Sc. Biotechnology (First Class)</td></tr>
+<tr><td>Aviation Eligibility</td><td>NIOS Mathematics Completed</td></tr>
+<tr><td>Medical Status</td><td>DGCA Class 1 Medical — FIT</td></tr>
+</table>
+</div>
+<div>
+<div class="label">DGCA Progress</div>
+<div class="grid3">
+<div class="stat"><strong>92</strong><span>Air Regulations</span><em>First Attempt</em></div>
+<div class="stat"><strong>92</strong><span>Aviation Meteorology</span><em>First Attempt</em></div>
+<div class="stat"><strong>78</strong><span>Air Navigation</span><em>First Attempt</em></div>
+</div>
+</div>
+</div>
+<div style="height:7mm"></div>
+<div class="label">Primary Path</div>
+<div class="pathflow">
+<div class="node"><em>Most Financially Responsible Option</em><strong>Airline Cadet Programme</strong></div>
+<div class="arrow">&#8595;</div>
+<div class="node"><strong>Commercial Pilot</strong></div>
+<div class="arrow">&#8595;</div>
+<div class="node"><strong><span class="captain">Captain</span> — Commercial Aviation</strong></div>
+</div>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>03</span></footer></section>
+
+<!-- 04 TIMELINE -->
+<section class="page top"><div class="topline"><span>Journey Timeline</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<h1>Journey Timeline</h1>
+<p class="subtitle">A journey already years in the making</p>
+<div class="vtimeline">
+<div class="step"><strong>2017</strong><span>10 CGPA — CBSE Class 10. Achievement published in the local newspaper.</span></div>
+<div class="step"><strong>2019</strong><span>CBSE Class 12 (PCB), 80.4%.</span></div>
+<div class="step"><strong>2019 – 2024</strong><span>B.Sc. Biotechnology alongside dedicated NEET preparation.</span></div>
+<div class="step"><strong>2024</strong><span>Career pivot — chose aviation as a deliberate, lasting decision.</span></div>
+<div class="step"><strong>2025</strong><span>Completed NIOS Mathematics. Became eligible for Commercial Pilot training.</span></div>
+<div class="step"><strong>May 2025</strong><span>DGCA Aviation Meteorology — 92%, first attempt.</span></div>
+<div class="step"><strong>July 2025</strong><span>DGCA Air Regulations — 92%, first attempt.</span></div>
+<div class="step"><strong>Jan 2026</strong><span>DGCA Air Navigation — 78%, first attempt.</span></div>
+<div class="step"><strong>2026</strong><span>DGCA Class 1 Medical — FIT.</span></div>
+<div class="step"><strong>Future</strong><span>Commercial Pilot, and in time, <span class="captain">Captain</span>.</span></div>
+</div>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>04</span></footer></section>
+
+<!-- 05 ACT I - THE BOY WHO NEVER LOOKED OUT -->
+<section class="page top"><div class="topline"><span>Act I · Foundations</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act I &nbsp;·&nbsp; Foundations</div>
+<h1>The Boy Who Never Looked Out of the Window</h1>
+<p class="subtitle">Curiosity began before the first flight</p>
+<p>Every summer vacation, my classmates returned to school with stories of family holidays. Many had travelled by air. They spoke excitedly about the view from the aircraft window, the clouds beneath them and the thrill of flying for the first time.</p>
+<p>I listened carefully to every story. But unlike many children, I never found myself wondering what it would feel like to sit beside the window.</p>
+<blockquote>Who is the person flying the aircraft?</blockquote>
+<p>That question fascinated me far more than the view outside. At that age, I knew almost nothing about aviation. I had never heard of the Directorate General of Civil Aviation, did not know what a Commercial Pilot Licence was, had never met a pilot, and no one in my school had ever become one.</p>
+<p>Throughout my school years, travelling by air was beyond my family's financial reach. My first flight came much later during college, on an IndiGo aircraft. Ironically, the dream had existed long before the first flight.</p>
+<p>Looking back today, I realise that my dream never began with airplanes. It began with responsibility. Perhaps that is why, even today, the title that inspires me most is not simply Pilot. It is <span class="captain">Captain</span>.</p>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>05</span></footer></section>
+
+<!-- 06 ACT I - FAMILY -->
+<section class="page top"><div class="topline"><span>Act I · Family</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act I &nbsp;·&nbsp; Family</div>
+<h1>The Family That Chose Education</h1>
+<p class="subtitle">A small tailoring shop, a larger purpose — and a mother who refused to compromise</p>
+<div class="grid2">
+<div>
+<p>There are moments in life that seem ordinary while they are happening but become extraordinary when viewed years later. For me, many of those moments began inside a small ladies' tailoring shop measuring barely thirty-five to forty square feet.</p>
+<p>It was never a large business. Yet that small shop achieved something remarkable — it educated two children. Every school fee, every tuition class, every notebook, every examination form and every uniform was paid for through its earnings.</p>
+<p>If my father taught me responsibility, my mother taught me belief. When my education began, there were schools that would have been far easier for our family to afford. My father naturally considered them. My mother saw something different.</p>
+<p>She told my father that if working harder was necessary, she would work harder — but her son would study at Delhi Public School, Bokaro. Through the years, she quietly gave up many of her own wishes. New clothes could wait. Personal comforts could wait. My future could not.</p>
+</div>
+<div>
+<figure class="evidence newspaper"><img src="images/newspaper.jpg" alt="Prabhat Khabar, 4 June 2017"><figcaption>Prabhat Khabar, 4 June 2017 — the Class 10 achievement, preserved as family history.</figcaption></figure>
+</div>
+</div>
+<blockquote>The first time my parents saw my name in print, they laminated it. I hope one day they hear my voice from the cockpit.</blockquote>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>06</span></footer></section>
+
+<!-- 07 ACT I - DREAM CALLED MEDICINE -->
+<section class="page top"><div class="topline"><span>Act I · Choosing the Right Dream</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act I &nbsp;·&nbsp; Choosing the Right Dream</div>
+<h1>The Dream Called Medicine</h1>
+<p class="subtitle">A sincere path, then an honest pivot</p>
+<p>After completing Class 12, I enrolled in a Bachelor of Science in Biotechnology while simultaneously preparing for the National Eligibility cum Entrance Test (NEET). Medicine was not simply my father's dream — it became my dream as well.</p>
+<p>Like many students from middle-class families, I believed that securing admission to a Government Medical College could transform not only my own future but also my family's. A government MBBS seat represented stability, dignity and the possibility of changing our family's future through education rather than circumstance.</p>
+<p>Between 2019 and 2024, I prepared sincerely for NEET while completing my graduation. Although I was unable to secure a Government MBBS seat, I have never considered those years wasted. They taught me how to study consistently, how to recover from disappointment and how to keep moving forward.</p>
+<p>By 2024, I had reached a crossroads. If my family was going to continue investing years of effort and substantial financial resources in my future, it should be for a profession to which I genuinely wanted to dedicate my life.</p>
+<blockquote>I did not choose aviation because medicine defeated me. I chose aviation because I finally understood where I truly belonged.</blockquote>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>07</span></footer></section>
+
+<!-- 08 ACT I - BECOMING ELIGIBLE -->
+<section class="page top"><div class="topline"><span>Act I · Becoming Eligible</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act I &nbsp;·&nbsp; Becoming Eligible</div>
+<h1>Becoming Eligible</h1>
+<p class="subtitle">The NIOS Mathematics chapter</p>
+<div class="grid2">
+<div>
+<p>The day I decided to pursue aviation, I also discovered my first major obstacle. I was not eligible.</p>
+<p>Like many students who choose Biology after Class 10, I had never studied Mathematics in Classes 11 and 12. No one in my school had ever pursued commercial aviation. Neither my parents nor I knew that Mathematics was mandatory for obtaining a Commercial Pilot Licence.</p>
+<p>While researching possible solutions, I learned about the National Institute of Open Schooling (NIOS), which allowed students like me to complete the required Mathematics qualification.</p>
+<p>Nearly six years had passed since I had last studied Mathematics seriously. Every chapter felt unfamiliar. Every formula demanded patience. For roughly two months, my daily routine revolved entirely around Mathematics — and when the results were declared, I had secured 67 out of 100.</p>
+</div>
+<div>
+<div class="card"><h3>Eligibility Milestone</h3>
+<div class="stat" style="margin-bottom:4mm"><strong>67</strong><span>NIOS Mathematics</span><em>Out of 100</em></div>
+<p>The qualification that made Commercial Pilot training possible. It was the first obstacle I chose to overcome rather than accept.</p>
+</div>
+</div>
+</div>
+<blockquote>The purpose of changing careers was not to choose an easier path. It was to choose the right one.</blockquote>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>08</span></footer></section>
+
+<!-- 09 ACT II - FIRST STEP INTO AVIATION -->
+<section class="page top"><div class="topline"><span>Act II · First Step Into Aviation</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act II &nbsp;·&nbsp; First Step Into Aviation</div>
+<h1>The First Step Into Aviation</h1>
+<p class="subtitle">Learning with financial responsibility</p>
+<p>Once I became eligible, the next question was straightforward: where should I begin?</p>
+<p>After researching different DGCA ground schools, I chose an online programme instead of relocating to another city. For many students, classroom coaching is the preferred option. For me, online learning was a carefully considered financial decision.</p>
+<p>Living away from home would have meant additional expenses for accommodation, food and transportation. By studying online, I was able to reduce those costs significantly while continuing to receive quality instruction.</p>
+<p>Every financial decision mattered — not because I wanted the cheapest option, but because I wanted to use my family's resources responsibly. That principle has remained constant throughout my journey, and it will remain constant in the pathway I ultimately choose.</p>
+<blockquote>Gradually, aviation stopped feeling like a distant dream and started becoming a subject I could understand, prepare for, and prove myself in.</blockquote>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>09</span></footer></section>
+
+<!-- 10 ACT II - DGCA -->
+<section class="page top"><div class="topline"><span>Act II · Building the Right to Fly</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act II &nbsp;·&nbsp; Building the Right to Fly</div>
+<h1>The DGCA Journey</h1>
+<p class="subtitle">Dreams inspire people. Evidence earns confidence.</p>
+<div class="grid3">
+<div class="stat"><strong>92</strong><span>Air Regulations</span><em>First Attempt</em></div>
+<div class="stat"><strong>92</strong><span>Aviation Meteorology</span><em>First Attempt</em></div>
+<div class="stat"><strong>78</strong><span>Air Navigation</span><em>First Attempt</em></div>
+</div>
+<div style="height:3mm"></div>
+<div class="grid3">
+<figure class="evidence examshot"><img src="images/dgca_regulation.jpg" alt="DGCA Air Regulations — 92 marks"><figcaption>Air Regulations — 92, PASS</figcaption></figure>
+<figure class="evidence examshot"><img src="images/dgca_meteorology.jpg" alt="DGCA Aviation Meteorology — 92 marks"><figcaption>Aviation Meteorology — 92, PASS</figcaption></figure>
+<figure class="evidence examshot"><img src="images/dgca_navigation.jpg" alt="DGCA Air Navigation — 78 marks"><figcaption>Air Navigation — 78, PASS</figcaption></figure>
+</div>
+<div style="height:3mm"></div>
+<table class="table">
+<tr><th>DGCA Subject</th><th>Score</th><th>Attempt</th><th>What It Taught Me</th></tr>
+<tr><td>Aviation Meteorology</td><td>92%</td><td>First</td><td>Confidence that I had chosen the right profession.</td></tr>
+<tr><td>Air Regulations</td><td>92%</td><td>First</td><td>Consistency — proof the first result was not accidental.</td></tr>
+<tr><td>Air Navigation</td><td>78%</td><td>First</td><td>Humility — resilience matters as much as excellence.</td></tr>
+<tr><td>Technical General</td><td>Scheduled</td><td>July 2026</td><td>The next milestone in the progression.</td></tr>
+</table>
+<blockquote>Success builds confidence. Challenges build character. Aviation demands both.</blockquote>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>10</span></footer></section>
+
+<!-- 11 ACT II - FROM STUDENT TO TEACHER -->
+<section class="page top"><div class="topline"><span>Act II · Sharing Knowledge</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act II &nbsp;·&nbsp; Sharing Knowledge</div>
+<h1>From Student to Teacher</h1>
+<p class="subtitle">Teaching as proof of command over the subject</p>
+<div class="grid2">
+<div>
+<p>One of the most unexpected milestones in my aviation journey was not clearing an examination. It was teaching one.</p>
+<p>Following my performance in DGCA Air Regulations, I conducted a DGCA Air Regulations batch for five aspiring pilots at AeroNiti Aviation Academy.</p>
+<p>Preparing others to sit the same examination demanded a far deeper command of the subject than passing it myself. Explaining every regulation clearly, anticipating questions and guiding students through difficult concepts reinforced my own knowledge and strengthened my commitment to aviation as a lifelong profession.</p>
+<div class="mini" style="margin-top:2mm"><span>Batch Conducted</span><strong>AeroNiti Aviation Academy</strong><em>DGCA Air Regulations Batch Conducted</em></div>
+</div>
+<div>
+<figure class="evidence poster"><img src="images/aeroniti_poster.jpg" alt="AeroNiti Aviation Academy — DGCA Air Regulations batch poster"><figcaption>Official AeroNiti Aviation Academy poster announcing the batch.</figcaption></figure>
+</div>
+</div>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>11</span></footer></section>
+
+<!-- 12 ACT II - FIRST AIRLINE OPPORTUNITY -->
+<section class="page top"><div class="topline"><span>Act II · Airline Pathways</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act II &nbsp;·&nbsp; Airline Pathways</div>
+<h1>The First Airline Opportunity</h1>
+<p class="subtitle">Application milestones and financial realism</p>
+<div class="grid2" style="align-items:start">
+<div>
+<p>Every aspiring pilot dreams of an email that says, "Congratulations. You have progressed to the next stage." For me, that arrived when I applied for the Air India Cadet Pilot Programme and cleared the CUT-E assessment.</p>
+<p>Soon afterwards, an interview invitation followed — for candidates joining Air India's USA-based training partners, at a programme cost exceeding ₹1.5 crore.</p>
+<p>At that moment, excitement gave way to reality. The international pathway, while excellent, was simply beyond what my family could responsibly consider. I have also progressed through the Akasa Air cadet application, and I continue to pursue every credible airline-linked opportunity available to me.</p>
+<blockquote style="margin-bottom:0">Responsible decisions are part of becoming a responsible <span class="captain">Captain</span>.</blockquote>
+</div>
+<div>
+<figure class="evidence email"><img src="images/airindia_cute.jpg" alt="Air India Cadet Pilot Programme — CUT-E assessment cleared"><figcaption>Air India Cadet Pilot Programme — CUT-E assessment cleared.</figcaption></figure>
+<div style="height:4mm"></div>
+<figure class="evidence email"><img src="images/airindia_interview.jpg" alt="Air India Cadet Pilot Programme — interview invitation"><figcaption>Air India Cadet Pilot Programme — interview invitation.</figcaption></figure>
+<div style="height:4mm"></div>
+<figure class="evidence email"><img src="images/akasa.jpg" alt="Akasa Air Cadet Programme — application progress"><figcaption>Akasa Air Cadet Programme — application progress.</figcaption></figure>
+</div>
+</div>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>12</span></footer></section>
+
+<!-- 13 ACT II - ONE DREAM TWO ROADS -->
+<section class="page top"><div class="topline"><span>Act II · One Dream, Two Roads</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act II &nbsp;·&nbsp; One Dream, Two Roads</div>
+<h1>One Dream. Two Roads.</h1>
+<p class="subtitle">Two genuine routes to the cockpit — and an honest comparison of each</p>
+<div class="grid2">
+<div class="card"><h3>Airline Cadet Programme</h3>
+<p>An airline cadet programme provides a <strong>structured pathway</strong> from training directly toward airline induction, with clearly defined standards at every stage.</p>
+<p>Selected candidates who successfully complete the programme typically receive a <strong>Letter of Intent or an airline-linked pathway</strong>, which provides significantly greater employment certainty than an open-market route.</p>
+<p>This certainty matters greatly to someone like me, whose primary goal is to <strong>minimise financial risk for his family</strong>. A structured route toward airline operations offers the clearest line from training to employment.</p>
+</div>
+<div class="card"><h3>Conventional CPL Route</h3>
+<p>The conventional route is <strong>more flexible</strong> and carries a <strong>lower initial cost</strong>, progressing through flight training, the remaining examinations, RTR, type rating and airline induction.</p>
+<p>However, <strong>airline recruitment depends upon vacancies</strong>. The waiting period after obtaining a CPL can be <strong>unpredictable</strong>.</p>
+<p>Because employment timing is uncertain and education finance is difficult to secure without substantial collateral, this route carries <strong>greater financial risk</strong> for a family in our position — the very risk I am most determined to avoid.</p>
+</div>
+</div>
+<blockquote>Both roads lead to the cockpit. The cadet route simply carries less risk for the people who supported me first.</blockquote>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>13</span></footer></section>
+
+<!-- 14 ACT III - FINANCIAL TRANSPARENCY -->
+<section class="page top p14"><div class="topline"><span>Act III · Responsible Path</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act III &nbsp;·&nbsp; Responsible Path</div>
+<h1>Financial Transparency</h1>
+<p class="subtitle">A realistic understanding of the commitment required</p>
+<p>I believe complete financial transparency is an essential part of seeking sponsorship. The figures below are based on current industry estimates and may vary depending upon the Flight Training Organisation, airline and market conditions at the time of admission.</p>
+<div class="grid2">
+<div class="card"><h3>Training Pathway A — Airline Cadet Programme</h3>
+<table class="table">
+<tr><th>Component</th><th>Estimated Cost</th></tr>
+<tr><td>Indian Airline Cadet Programme</td><td>approx. ₹94 lakh – ₹1 crore</td></tr>
+<tr><td>International Airline Cadet Programme</td><td>approx. ₹1.2 – 1.6 crore</td></tr>
+</table>
+<div class="total-line">Total Estimated Cost: <span>₹94 lakh – ₹1.6 crore</span></div>
+<p>My preferred pathway is an airline cadet programme because it provides structured training and a direct pathway toward airline operations. The final training provider will depend on programme selection, availability, and the funding structure agreed with the sponsor.</p>
+</div>
+<div class="card"><h3>Training Pathway B — Conventional CPL Route</h3>
+<table class="table">
+<tr><th>Component</th><th>Estimated Cost</th></tr>
+<tr><td>CPL Flight Training (incl. stay &amp; meals)</td><td>₹75 lakh</td></tr>
+<tr><td>RTR Ground Training</td><td>₹50,000</td></tr>
+<tr><td>Remaining DGCA Examination Fees</td><td>₹5,000</td></tr>
+<tr><td>DGCA Class 1 Medical</td><td>Already Completed</td></tr>
+<tr><td>Type Rating &amp; Airline Training</td><td>₹30 – 32 lakh</td></tr>
+</table>
+<div class="total-line">Total Estimated Cost: <span>approximately ₹1.06 – 1.08 crore</span></div>
+<p>This pathway may be pursued in India or overseas, depending on the selected Flight Training Organisation and funding arrangement.</p>
+</div>
+</div>
+<div class="card"><h3>My Preferred Support Structure</h3>
+<p>My primary request is for a scholarship or sponsorship that enables me to complete my commercial pilot training.</p>
+<p>I also recognise that different organisations have different funding policies. If a full sponsorship is not possible, I would sincerely appreciate the opportunity to discuss alternative support structures, such as partial sponsorship combined with an interest-free or low-interest education loan, or any other arrangement your organisation considers appropriate.</p>
+<p>My commitment remains the same: to complete my training successfully, build a long-term career in commercial aviation, and honour the confidence placed in me.</p>
+</div>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>14</span></footer></section>
+
+<!-- 15 ACT III - WHY SPONSORSHIP INSTEAD OF LOAN -->
+<section class="page top"><div class="topline"><span>Act III · The Honest Question</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act III &nbsp;·&nbsp; The Honest Question</div>
+<h1>Why Sponsorship Instead of an Education Loan?</h1>
+<p class="subtitle">A responsibility — not an escape from responsibility</p>
+<div class="grid2">
+<div>
+<p>One of the most reasonable questions anyone can ask is: "Why not simply take an education loan?" For many students, that is indeed the right solution. For my family, however, the situation is different.</p>
+<p>Our household income is modest and irregular, derived primarily from our family's agricultural land in Bihar; my mother is a homemaker. We live in a rented house and manage ongoing household and medical expenses. Our economic status is formally recognised by the Government of Bihar EWS certificate enclosed in this dossier.</p>
+<p>Commercial Pilot training requires an investment that can approach or exceed one crore rupees. Loans of this magnitude generally require substantial collateral or other financial security that our family does not possess.</p>
+<p>More importantly, aviation is a dynamic profession. If employment were delayed after training, the burden of repayment would immediately fall upon my family. After everything my parents have already sacrificed to educate me, I cannot knowingly place them under that level of financial pressure.</p>
+</div>
+<div>
+<figure class="evidence doc"><img src="images/ews.jpeg" alt="Government of Bihar EWS Certificate"><figcaption>Government of Bihar EWS Certificate — supporting proof of economic eligibility status.</figcaption></figure>
+</div>
+</div>
+<blockquote>My goal is to ensure that the greatest possible risk is carried by me, through hard work and commitment — not by my parents, through financial burden.</blockquote>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>15</span></footer></section>
+
+<!-- 16 ACT IV - FAMILY INVESTMENT -->
+<section class="page top"><div class="topline"><span>Act IV · Investment Already Made</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act IV &nbsp;·&nbsp; Investment Already Made</div>
+<h1>Before Anyone Else Invested in Me</h1>
+<p class="subtitle">The first investments were made by my parents</p>
+<p>When people speak about investment, they often think about money. For me, the first investments in my life were never made by banks, institutions or sponsors. They were made by my parents — who, long before I chose aviation, had already spent decades investing in the one thing they believed could transform our family's future: education.</p>
+<div class="grid2">
+<div class="card"><h3>A Small Shop With A Big Purpose</h3>
+<p>Throughout my childhood, my parents jointly ran a ladies' tailoring shop of barely thirty-five to forty square feet. It was a small shop — yet within those four walls, my parents built something far larger than a business. They built opportunities.</p></div>
+<div class="card"><h3>The Deliveries I Never Understood</h3>
+<p>On winter evenings, after closing the shop, my father would place stitched clothes on his scooter and leave again. Years later I understood: sometimes groceries were needed, sometimes school expenses could not wait. He was quietly delivering stability to our family.</p></div>
+</div>
+<div class="card" style="margin-top:4mm"><h3>The Woman Who Refused To Compromise</h3>
+<p>And through it all stood my mother, who refused to compromise on education. Whenever family finances became limited, my education always came first. New clothes could wait. Personal comforts could wait. My future could not. Her belief, more than any sum of money, was the first true investment made in me.</p></div>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>16</span></footer></section>
+
+<!-- 17 ACT IV - GRATITUDE -->
+<section class="page top"><div class="topline"><span>Act IV · Gratitude</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act IV &nbsp;·&nbsp; Gratitude</div>
+<h1>Gratitude Beyond My Own Family</h1>
+<p class="subtitle">A commitment shaped by kindness received</p>
+<p>Every family carries memories that quietly shape the way they see the world. One such memory changed mine forever.</p>
+<p>In 2012, my mother underwent Balloon Valvoplasty at the Sri Sathya Sai Institute of Higher Medical Sciences, Prasanthi Nilayam. At that time, my family could not have afforded such treatment. The hospital provided world-class medical care completely free of cost. Because of that generosity, my mother received treatment at the right time. She survived.</p>
+<p>As I grew older, I realised something extraordinary. Someone, somewhere, had chosen to create an institution where a family's financial condition would never determine whether a mother received life-saving treatment.</p>
+<blockquote>Success becomes meaningful only when it creates opportunities for others.</blockquote>
+<p>One of my personal commitments is that once I begin my professional career, I will regularly contribute to the Sri Sathya Sai Institute. If my contribution helps another family receive the same hope that mine once received, it will be one of the most meaningful uses of my earnings.</p>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>17</span></footer></section>
+
+<!-- 18 ACT V - THE CAPTAIN I ASPIRE TO BECOME -->
+<section class="page top"><div class="topline"><span>Act V · The Captain I Aspire To Become</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act V &nbsp;·&nbsp; Aspiration</div>
+<h1>The <span class="captain">Captain</span> I Aspire To Become</h1>
+<p class="subtitle">The word that stayed with me — and the professional I intend to be</p>
+<div class="grid2">
+<div>
+<p>People often ask, "Why do you want to become a pilot?" For me, the answer has never been simple. Even before I understood aviation, I admired responsibility. As a child, whenever I heard, "This is your <span class="captain">Captain</span> speaking…" I thought about the responsibility carried by the person making that announcement.</p>
+<p>Hundreds of passengers. A sophisticated aircraft. Critical decisions made every day. Lives entrusted to one cockpit. That responsibility fascinated me. During school, I joined the Student Council, served as a Prefect, became Vice Captain, and eventually earned the <span class="captain">Captain</span> badge.</p>
+</div>
+<div>
+<figure class="evidence wide"><img src="images/captain.jpg" alt="Student Council leadership"><figcaption>Student Council leadership — where the word <em>Captain</em> first meant trust and responsibility.</figcaption></figure>
+</div>
+</div>
+<div class="grid2" style="margin-top:4mm">
+<div class="card"><h3>Fifteen Years From Today</h3>
+<p>I imagine thousands of flying hours, a calm voice in difficult situations, and a reputation built upon professionalism. By then, I hope to have earned the rank of <span class="captain">Captain</span> through dedication rather than shortcuts. The best pilots are remembered not because passengers notice them, but because passengers never have to think about them.</p></div>
+<div class="card"><h3>Beyond Aviation</h3>
+<p>One day, I want to establish a charitable veterinary hospital for stray dogs and cattle in my hometown of Bokaro. Success, to me, has never been about the uniform or the prestige. It means becoming the kind of professional whom passengers trust without ever knowing personally.</p></div>
+</div>
+<blockquote style="margin-bottom:0">Ladies and Gentlemen, this is your <span class="captain">Captain</span> speaking…</blockquote>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>18</span></footer></section>
+
+<!-- 19 ACT VI - THE RETURN ON YOUR TRUST: MY PROMISE -->
+<section class="page top"><div class="topline"><span>Act VI · Return on Trust</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<div class="act-eyebrow">Act VI &nbsp;·&nbsp; Return on Trust</div>
+<h1>The Return On Your Trust: My Promise</h1>
+<p class="subtitle">What sponsorship would mean in practice</p>
+<p>Every investment seeks a return. Financial investments generate financial returns. Educational investments generate knowledge. I believe sponsorship generates something even more valuable — trust. If someone chooses to support my journey, they are investing in far more than flight training. They are investing in my character, my discipline, my judgement and my future.</p>
+<ul class="checklist">
+<li>I will pursue my training with complete dedication and professionalism.</li>
+<li>I will choose the most financially responsible pathway without compromising the quality of training.</li>
+<li>I will keep my sponsor informed about every significant milestone throughout my journey.</li>
+<li>I will represent the values of integrity, discipline and humility throughout my career.</li>
+<li>I will never forget that someone believed in me before I had the opportunity to prove myself fully.</li>
+</ul>
+<blockquote>One day, when I walk into an aircraft wearing four stripes on my shoulders, I will know that those stripes were earned through years of collective faith and sacrifice.</blockquote>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>19</span></footer></section>
+
+<!-- 20 BEYOND FUNDING: UNDERSTANDING THE JOURNEY -->
+<section class="page top p20"><div class="topline"><span>Beyond Funding</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<h1>Beyond Funding: Understanding the Journey</h1>
+<p class="subtitle">How commercial pilot training is structured — and why support is needed early</p>
+
+<div class="bf-block">
+<div class="bf-sec-label">Section 1 &nbsp;·&nbsp; Understanding the Training Journey</div>
+<div class="bf-cols">
+<div>
+<div class="bf-h">Airline Cadet Programme</div>
+<div class="ptl"><div class="node">Application</div><div class="arrow">&#8595;</div><div class="node">Assessment Fee</div><div class="arrow">&#8595;</div><div class="node">ADAPT / CUT-E</div><div class="arrow">&#8595;</div><div class="node">Interview</div><div class="arrow">&#8595;</div><div class="node accent">Letter of Intent (LOI)</div><div class="arrow">&#8595;</div><div class="node">First Instalment</div><div class="arrow">&#8595;</div><div class="node">Training Begins</div><div class="arrow">&#8595;</div><div class="node">Remaining Instalments</div></div>
+<p class="bf-caption">Cadet programmes involve several competitive selection stages. A Letter of Intent is issued before training begins, and the seat is confirmed once the initial instalment is paid. Fees then follow the airline's milestone-based schedule rather than a single upfront amount.</p>
+</div>
+<div>
+<div class="bf-h">Conventional CPL Route</div>
+<div class="ptl"><div class="node">Choose Flight Training Organisation</div><div class="arrow">&#8595;</div><div class="node">Admission Discussion</div><div class="arrow">&#8595;</div><div class="node">Receive Fee Structure</div><div class="arrow">&#8595;</div><div class="node accent">Booking Amount</div><div class="arrow">&#8595;</div><div class="node">Training Begins</div><div class="arrow">&#8595;</div><div class="node">Remaining Instalments</div></div>
+<p class="bf-caption">Flight Training Organisations follow predefined payment schedules. Admission is confirmed after an initial booking amount, with the balance paid in instalments during training.</p>
+</div>
+</div>
+<div class="infobox">
+<h3>Understanding Why Sponsorship Is Needed Before Admission</h3>
+<p>Unlike most university programmes, both the cadet and conventional routes require an initial financial commitment before a seat is confirmed. Support is therefore usually needed before training can be secured — and, depending on the sponsor's preferred model, can follow these published instalment schedules rather than a single upfront payment.</p>
+</div>
+</div>
+
+<div class="bf-block">
+<div class="bf-sec-label">Section 2 &nbsp;·&nbsp; Why This Opportunity Matters</div>
+<p class="bf-body">Commercial pilot training is unlike many other educational pathways. The financial barrier to entry is exceptionally high, yet the profession demands years of disciplined preparation, technical competence, sound judgement, and continuous accountability.</p>
+<p class="bf-body">Over the past several years, I have focused on demonstrating that I am prepared for that responsibility—not only through academic performance, but also by independently meeting DGCA eligibility requirements, obtaining a DGCA Class 1 Medical Certificate, clearing multiple DGCA examinations on my first attempt, and teaching aviation subjects to aspiring pilots.</p>
+<p class="bf-body">My request is not based solely on potential. It is based on preparation that has already taken place. Financial support would not create that preparation—it would enable me to complete the final stage of a journey that is already well underway.</p>
+</div>
+
+<div class="bf-block">
+<div class="bf-sec-label">Section 3 &nbsp;·&nbsp; My Commitment to Every Sponsor</div>
+<div class="commit-grid">
+<div class="commit-card"><div class="ci">&#128273;</div><h3>Responsible Use of Funds</h3><p>Any financial assistance entrusted to me will be used exclusively for my commercial pilot training and directly related educational expenses.</p></div>
+<div class="commit-card"><div class="ci">&#128202;</div><h3>Transparency &amp; Accountability</h3><p>I will maintain complete transparency regarding the use of funds and, if requested, provide periodic progress updates throughout my training.</p></div>
+<div class="commit-card"><div class="ci">&#129309;</div><h3>Paying the Opportunity Forward</h3><p>As my career progresses, I aspire to support deserving students pursuing aviation, carrying forward the opportunity that may be extended to me today.</p></div>
+</div>
+</div>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>20</span></footer></section>
+
+<!-- 21 CLOSING NOTE -->
+<section class="page top"><div class="topline"><span>Closing Note</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<h1>Closing Note</h1>
+<p class="subtitle">With respect and gratitude</p>
+<p>Dear Sir/Madam,</p>
+<p>By now, you know much more than my academic record. You know where I come from. You know the decisions that shaped my journey. You know the values my parents taught me. And you know the responsibility with which I intend to build my career.</p>
+<p>Throughout this dossier, I have tried to present myself honestly. I have not attempted to portray my journey as extraordinary. Thousands of families across India work hard every day to educate their children. Mine is one of them. The difference is that today I have the opportunity to ask for help in completing a journey that has already been years in the making.</p>
+<p>If you choose to support me, I assure you that your trust will never be taken for granted. Every examination I clear, every milestone I achieve, every passenger I safely carry and every announcement I make from the cockpit will remind me that my journey was made possible not only by my own efforts, but also by the faith someone placed in me.</p>
+<p>Regardless of your decision, thank you for reading my story. Thank you for giving your time to someone you had never met before today. That generosity alone deserves my sincere gratitude.</p>
+<p>With respect,</p>
+<div class="signature">Shubham Kumar</div>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>21</span></footer></section>
+
+<!-- 22 EVIDENCE & VERIFICATION PORTFOLIO -->
+<section class="page top"><div class="topline"><span>Evidence &amp; Verification Portfolio</span><span>FROM DREAM TO COCKPIT</span></div>
+<main>
+<h1>Evidence &amp; Verification Portfolio</h1>
+<p class="subtitle">Documents enclosed in support of this dossier</p>
+<div class="ev-appendix">
+<div class="ev-item"><div class="ev-icon">&#127891;</div><div><h3>Academic Records</h3><p>CBSE Class 10 Marksheet</p><p>CBSE Class 12 Marksheet</p><p>B.Sc. Biotechnology Degree &amp; Marksheet</p></div></div>
+<div class="ev-item"><div class="ev-icon">&#9992;</div><div><h3>DGCA Records</h3><p>Aviation Meteorology — 92%, First Attempt</p><p>Air Regulations — 92%, First Attempt</p><p>Air Navigation — 78%, First Attempt</p><p>Technical General — to be added after result</p></div></div>
+<div class="ev-item"><div class="ev-icon">&#10010;</div><div><h3>Medical &amp; Financial</h3><p>DGCA Class 1 Medical Assessment — FIT</p><p>EWS Certificate, Government of Bihar</p><p>Passport / Aadhaar, if required by sponsor</p></div></div>
+<div class="ev-item"><div class="ev-icon">&#128231;</div><div><h3>Airline Applications</h3><p>Air India CUT-E Qualification Email</p><p>Air India Interview Invitation</p><p>Akasa Air Cadet Programme Application</p></div></div>
+<div class="ev-item"><div class="ev-icon">&#128240;</div><div><h3>Family &amp; Legacy</h3><p>Laminated Newspaper Clipping — Class 10 result, Prabhat Khabar, 2017</p></div></div>
+<div class="ev-item"><div class="ev-icon">&#128218;</div><div><h3>Teaching Experience</h3><p>AeroNiti Aviation Academy — DGCA Air Regulations Batch Conducted (Supporting Poster Attached)</p></div></div>
+</div>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>22</span></footer></section>
+
+<!-- 23 FINAL PAGE -->
+<section class="page closing"><div class="topline"><span>Final Note</span><span>From Dream to Cockpit</span></div>
+<main>
+<div class="dream-title">From Dream to Cockpit</div>
+<div class="line">One opportunity can change a career.</div>
+<div class="line">One career can change a family.</div>
+<div class="line">One family's journey can inspire many more.</div>
+<div class="final-quote">"I am not asking for sponsorship to earn a licence. I am asking for the opportunity to earn the right to be called <span style="color:var(--gold);font-style:normal;font-weight:700">Captain</span>."</div>
+<div class="sig-name">Shubham Kumar</div>
+<div class="sig-role">Commercial Pilot Aspirant &nbsp;|&nbsp; Future Captain</div>
+</main>
+<footer><span>FROM DREAM TO COCKPIT</span><span>23</span></footer></section>
+
+</body></html>
