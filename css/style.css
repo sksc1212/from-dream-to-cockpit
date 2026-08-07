@@ -916,3 +916,34 @@ footer h2{
 .summary-card.no-photo h2{
     margin-top:0;
 }
+/* ===========================
+   PDF / Viewer Pages
+=========================== */
+
+.viewer-card{
+    width:100%;
+    max-width:1400px;
+    margin:50px auto 80px;
+    padding:0 40px;
+}
+
+.viewer-card iframe{
+    width:100%;
+    height:1650px;
+    border:none;
+    border-radius:16px;
+    background:#fff;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+@media (max-width:768px){
+
+    .viewer-card{
+        padding:0 15px;
+    }
+
+    .viewer-card iframe{
+        height:900px;
+    }
+
+}
