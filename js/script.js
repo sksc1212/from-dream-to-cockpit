@@ -177,33 +177,41 @@ document.addEventListener("DOMContentLoaded", function () {
        Counter Animation
     =========================== */
 
-    const counters = document.querySelectorAll(".number");
+   const counters = document.querySelectorAll(".number");
 
-    counters.forEach(counter=>{
+counters.forEach(counter => {
 
-        const text = counter.innerText;
+    const text = counter.innerText.trim();
+    const value = parseInt(text);
 
-        const value = parseInt(text);
+    if (isNaN(value)) return;
 
-        if(isNaN(value)) return;
+    // Don't animate years like 2026
+    if (value >= 1000) {
+        counter.innerText = text;
+        return;
+    }
 
-        let current = 0;
+    let current = 0;
 
-        const interval = setInterval(()=>{
+    const interval = setInterval(() => {
 
-            current++;
+        current++;
 
-            counter.innerText=current+"%";
+        if (text.includes("%")) {
+            counter.innerText = current + "%";
+        } else {
+            counter.innerText = current;
+        }
 
-            if(current>=value){
+        if (current >= value) {
+            counter.innerText = text;
+            clearInterval(interval);
+        }
 
-                counter.innerText=text;
+    }, 18);
 
-                clearInterval(interval);
-
-            }
-
-        },18);
+});
 
     });
 
