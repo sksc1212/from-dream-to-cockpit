@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     });
-    /* Mobile Menu */
+   /* Mobile Menu */
 
 const mobileBtn = document.querySelector(".mobile-btn");
 const mobileNav = document.querySelector(".nav-links");
@@ -292,9 +292,14 @@ const mobileNav = document.querySelector(".nav-links");
 if (mobileBtn && mobileNav) {
 
     mobileBtn.addEventListener("click", () => {
-    console.log("BUTTON CLICKED");
-    mobileNav.classList.toggle("show");
-});
+        mobileNav.classList.toggle("show");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            mobileNav.classList.remove("show");
+        });
+    });
 
 }
 
