@@ -901,4 +901,18 @@ footer h2{
 
 }
 
+}/* ===== SUMMARY WITHOUT PHOTO ===== */
+
+.summary-card.no-photo{
+    display:block;
+    max-width:900px;
+    margin:0 auto;
+}
+
+.summary-card.no-photo .summary-content{
+    width:100%;
+}
+
+.summary-card.no-photo h2{
+    margin-top:0;
 }
