@@ -173,48 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-    /* ===========================
-       Counter Animation
-    =========================== */
-
-   const counters = document.querySelectorAll(".number");
-
-counters.forEach(counter => {
-
-    const text = counter.innerText.trim();
-    const value = parseInt(text);
-
-    if (isNaN(value)) return;
-
-    // Don't animate years like 2026
-    if (value >= 1000) {
-        counter.innerText = text;
-        return;
-    }
-
-    let current = 0;
-
-    const interval = setInterval(() => {
-
-        current++;
-
-        if (text.includes("%")) {
-            counter.innerText = current + "%";
-        } else {
-            counter.innerText = current;
-        }
-
-        if (current >= value) {
-            counter.innerText = text;
-            clearInterval(interval);
-        }
-
-    }, 18);
-
-});
-
-    });
-
+    
     /* ===========================
        Scroll To Top Button
     =========================== */
