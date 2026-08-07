@@ -248,8 +248,28 @@ color:var(--navy);
 }
 
 @media(max-width:900px){
-.nav-links{display:none;}
-.mobile-btn{display:block;}
+
+.nav-links{
+    display:none;
+    position:absolute;
+    top:84px;
+    left:0;
+    width:100%;
+    background:#0F2747;
+    flex-direction:column;
+    gap:20px;
+    padding:20px 0;
+    text-align:center;
+}
+
+.nav-links.show{
+    display:flex;
+}
+
+.mobile-btn{
+    display:block;
+    cursor:pointer;
+}
 .brief-hero-grid{grid-template-columns:1fr;}
 .brief-left{text-align:center;}
 .brief-left h2{font-size:3rem;}
