@@ -179,7 +179,11 @@ section{
 
 .primary-btn:hover{
 
+    background:#b98f32;
+
     transform:translateY(-3px);
+
+    box-shadow:0 18px 40px rgba(200,162,76,.45);
 
 }
 
@@ -204,6 +208,8 @@ section{
     background:white;
 
     color:var(--navy);
+
+    transform:translateY(-3px);
 
 }
 
@@ -316,18 +322,22 @@ section{
 }
 
 .hero-image{
-
-    width:280px;
-
+    width:305px;
     margin:0 auto 25px;
-
 }
+
 
 .hero-image img{
 
     width:100%;
-
     border-radius:22px;
+
+    box-shadow:0 28px 70px rgba(0,0,0,.18);
+
+    transition:.35s ease;
+}.hero-image img:hover{
+
+    transform:scale(1.02);
 
 }
 
@@ -555,7 +565,7 @@ section{
 
     border-radius:20px;
 
-    box-shadow:var(--shadow);
+    box-shadow:0 18px 50px rgba(0,0,0,.09);
 
 }
 
@@ -601,7 +611,7 @@ section{
 
     text-align:center;
 
-    box-shadow:var(--shadow);
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
 
     transition:.35s;
 
@@ -609,7 +619,9 @@ section{
 
 .achievement-card:hover{
 
-    transform:translateY(-8px);
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.12);
 
 }
 
@@ -691,7 +703,19 @@ section{
 
 }
 
+.footer-divider{
 
+    width:140px;
+
+    height:2px;
+
+    background:var(--gold);
+
+    margin:0 auto 70px;
+
+    border-radius:20px;
+
+}
 
 /* ==========================================================
    FOOTER
