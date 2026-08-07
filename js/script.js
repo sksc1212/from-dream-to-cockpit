@@ -270,7 +270,18 @@ if (mobileBtn && mobileNav) {
 
 }
 
-});
+});const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if(menuToggle){
+
+    menuToggle.addEventListener("click",function(){
+
+        navMenu.classList.toggle("active");
+
+    });
+
+}
 
 /* ===========================================
 END OF FILE

@@ -970,4 +970,47 @@ footer h2{
         height:900px;
     }
 
+}/* ===============================
+   MOBILE NAVIGATION
+================================== */
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#fff;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#183258;
+
+        display:none;
+        flex-direction:column;
+
+        text-align:center;
+
+        padding:20px 0;
+
+        gap:20px;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links a{
+        color:white;
+        font-size:18px;
+    }
+
 }
