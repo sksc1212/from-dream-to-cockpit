@@ -287,13 +287,14 @@ document.addEventListener("DOMContentLoaded", function () {
     /* Mobile Menu */
 
 const mobileBtn = document.querySelector(".mobile-btn");
-const navLinks = document.querySelector(".nav-links");
+const mobileNav = document.querySelector(".nav-links");
 
 if (mobileBtn && navLinks) {
 
     mobileBtn.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
-    });
+    console.log("BUTTON CLICKED");
+    mobileNav.classList.toggle("show");
+});
 
 }
 
