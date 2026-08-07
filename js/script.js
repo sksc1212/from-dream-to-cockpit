@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const mobileBtn = document.querySelector(".mobile-btn");
 const mobileNav = document.querySelector(".nav-links");
 
-if (mobileBtn && navLinks) {
+if (mobileBtn && mobileNav) {
 
     mobileBtn.addEventListener("click", () => {
     console.log("BUTTON CLICKED");
