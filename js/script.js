@@ -251,24 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     });
-   /* Mobile Menu */
-
-const mobileBtn = document.querySelector(".mobile-btn");
-const mobileNav = document.querySelector(".nav-links");
-
-if (mobileBtn && mobileNav) {
-
-    mobileBtn.addEventListener("click", () => {
-        mobileNav.classList.toggle("show");
-    });
-
-    document.querySelectorAll(".nav-links a").forEach(link => {
-        link.addEventListener("click", () => {
-            mobileNav.classList.remove("show");
-        });
-    });
-
-}
+ 
 
 });const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
