@@ -1072,7 +1072,7 @@ footer h2{
 
 .viewer-card iframe{
     width:100%;
-    height:27000px;
+    height:1000px;
     border:none;
     border-radius:16px;
     background:#fff;
@@ -1103,8 +1103,6 @@ footer h2{
         border-radius:18px;
     }
 
-    .viewer-card iframe{
-        height:27000px;
-    }
+    
 
 }

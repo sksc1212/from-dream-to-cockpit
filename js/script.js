@@ -262,7 +262,37 @@ if(menuToggle){
 
         navMenu.classList.toggle("active");
 
+    });/* ==========================================================
+   DOSSIER IFRAME AUTO HEIGHT
+========================================================== */
+
+const dossierFrame = document.querySelector('.viewer-card iframe');
+
+if (dossierFrame) {
+
+    dossierFrame.addEventListener('load', function () {
+
+        try {
+
+            const doc = dossierFrame.contentDocument ||
+                        dossierFrame.contentWindow.document;
+
+            const height = Math.max(
+                doc.body.scrollHeight,
+                doc.documentElement.scrollHeight
+            );
+
+            dossierFrame.style.height = height + 'px';
+
+        } catch (error) {
+
+            console.log('Dossier iframe height adjustment failed:', error);
+
+        }
+
     });
+
+}
 
 }
 
