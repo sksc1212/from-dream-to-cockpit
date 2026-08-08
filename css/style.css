@@ -29,18 +29,19 @@ html{
     scroll-behavior:smooth;
 }
 
-body{
-
+bbody{
     font-family:"Poppins",sans-serif;
-
     background:var(--white);
-
     color:var(--text);
-
     overflow-x:hidden;
-
+    overflow-y:auto;
+    min-height:100vh;
+    height:auto;
     line-height:1.8;
-
+}html{
+    min-height:100%;
+    height:auto;
+    overflow-y:auto;
 }
 
 img{
