@@ -256,23 +256,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 
-if(menuToggle){
+if(menuToggle && navMenu){
 
     menuToggle.addEventListener("click",function(){
 
         navMenu.classList.toggle("active");
 
-    });/* ==========================================================
-   DOSSIER IFRAME AUTO HEIGHT
+    });
+
+}
+
+
+/* ==========================================================
+   DOSSIER IFRAME HEIGHT
 ========================================================== */
 
-const dossierFrame = document.querySelector('.viewer-card iframe');
+const dossierFrame = document.querySelector(".viewer-card iframe");
 
-if (dossierFrame) {
+if(dossierFrame){
 
-    dossierFrame.addEventListener('load', function () {
+    const setDossierHeight = () => {
 
-        try {
+        try{
 
             const doc = dossierFrame.contentDocument ||
                         dossierFrame.contentWindow.document;
@@ -282,17 +287,26 @@ if (dossierFrame) {
                 doc.documentElement.scrollHeight
             );
 
-            dossierFrame.style.height = height + 'px';
+            dossierFrame.style.height = height + "px";
 
-        } catch (error) {
+        }catch(error){
 
-            console.log('Dossier iframe height adjustment failed:', error);
+            console.log("Dossier iframe height adjustment failed:", error);
 
         }
 
-    });
+    };
 
-}
+    dossierFrame.addEventListener("load", setDossierHeight);
+
+    if(
+        dossierFrame.contentDocument &&
+        dossierFrame.contentDocument.readyState === "complete"
+    ){
+
+        setDossierHeight();
+
+    }
 
 }
 
