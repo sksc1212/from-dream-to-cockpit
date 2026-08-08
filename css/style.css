@@ -1045,6 +1045,11 @@ footer h2{
     pointer-events:none;
 }
 
+/* Executive Brief is a single-page viewer, not the 23-page dossier. */
+.dossier-page .viewer-card iframe{
+    height:1000px;
+}
+
 @media(max-width:768px){
 
     .dossier-page{
@@ -1067,6 +1072,11 @@ footer h2{
         margin:0 15px 50px;
         padding:10px;
         border-radius:18px;
+    }
+
+    /* Keep Executive Brief compact on phones too. */
+    .dossier-page .viewer-card iframe{
+        height:1050px;
     }
 
     

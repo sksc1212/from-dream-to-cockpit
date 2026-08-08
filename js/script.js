@@ -271,7 +271,9 @@ if(menuToggle && navMenu){
    DOSSIER IFRAME HEIGHT
 ========================================================== */
 
-const dossierFrame = document.querySelector(".viewer-card iframe");
+const dossierFrame = document.querySelector(
+    '.viewer-card iframe[src*="dossier-viewer"]'
+);
 
 if(dossierFrame){
 
