@@ -1042,6 +1042,7 @@ footer h2{
     border-radius:16px;
     background:#fff;
     display:block;
+    pointer-events:none;
 }
 
 @media(max-width:768px){
